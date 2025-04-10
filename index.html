@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +9,20 @@
 <body>
     <div class="container">
         <h1>Comparador de Números</h1>
-        <form>
-            <p>
+        <form id="meuFomulario">
+            <div class="form-group">
                 <label for="campoA">Primeiro número:</label>
-                <input type="number" id="campoA">
-            </p>
-            <p>
-                <label for="compoB">Segundo número:</label>
-                <input type="number" id="campoB">
-            </p>
+                <input type="number" id="campoA" required>
+            </div>
+            <div class="form-group">
+                <label for="campoB">Segundo número:</label>
+                <input type="number" id="campoB" required>
+            </div>
             <button type="submit">Comparar</button>
         </form>
+        <p id="mensagem" class="mensagem"></p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
