@@ -58,3 +58,23 @@ button:hover {
     background-color: #91442c;
 }
 
+.mensagem {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    min-height: 1.5em; /* Evita que o layout "pule" quando a msg aparece */
+}
+
+.mensagem.sucesso {
+    background-color: #09a054;
+    color: #f9fbf9;
+    border: 1px solid #c3e6cb;
+}
+
+.mensagem.erro {
+    background-color: #f10a0a;
+    color: #faf6f6;
+    border: 1px solid #f5c6cb;
+}
+
